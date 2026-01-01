@@ -1,8 +1,8 @@
-FROM ubuntu:23.04
+FROM ubuntu:22.04
 
 ENV FFBUILD_DLDIR="/opt/ffdl"
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 RUN \
     mkdir -p "$FFBUILD_DLDIR" && \
     apt-get -y update && \
